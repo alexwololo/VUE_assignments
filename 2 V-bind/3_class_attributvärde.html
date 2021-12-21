@@ -1,0 +1,26 @@
+<!-- Uppgift: class-attributvärde
+Instruktioner
+Deklarera n-“variabeln” så att span-elementet får sitt class-attributvärde satt till n. Inspektören ska alltså visa class=“n” när elementet inspekteras, och texten ska vara röd.
+
+Din lösning -->
+
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>class-attributvärde</title>
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+    <style>
+      .n {
+        color: #c00;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <span :class="{ n: n > 2 && n < 4 }">Texten ska vara röd.</span>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

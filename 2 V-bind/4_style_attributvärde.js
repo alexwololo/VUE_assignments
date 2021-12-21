@@ -1,5 +1,5 @@
 Vue.createApp({
   data() {
-    return { isDisabled: true };
+    return { suit: "HEARTS" };
   },
 }).mount("#app");

@@ -1,0 +1,30 @@
+<!-- Uppgift: Attributvärde utan kortform
+Instruktioner
+Gör så att nedanstående HTML-kod (inuti app-elementet) renderar bilden på räven, det vill säga sätter src-attributvärdet till exakt det bildfilnamnet.
+
+fox@150px.jpeg är licensierad under Public Domain Mark 1.0 (bildkälla). -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Attributvärde utan kortform</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <img alt="" v-bind:src="avatar">
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+
+
+<div id="app">
+  <img alt="" :src="avatar">
+</div>
