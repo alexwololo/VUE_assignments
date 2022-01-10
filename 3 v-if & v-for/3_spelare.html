@@ -1,0 +1,32 @@
+<!-- Uppgift: Spelare
+Instruktioner
+Gör så att ett (och endast ett) ul-element renderas (inuti app-elementet).
+
+Låt vidare ul-elementet innehålla lika många li-element som det finns värden i players-array:en, och låt även innehållet i li-elementen reflektera stränginnehållet i players.
+
+Givet ett players-värde som det i JavaScript-filen ska det första li-elementet innehålla “Alice”, det andra innehålla “Bob”, och så vidare.
+
+HTML-koden ska endast innehålla ett li-element – resten ska skapas med v-for.
+
+Din lösning -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Spelare</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <ul>
+      <li v-for='players in players'> {{ players }}</li>
+    </ul>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

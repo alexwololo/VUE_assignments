@@ -1,0 +1,23 @@
+<!-- Uppgift: Öka insatsen
+Instruktioner
+
+Gör så att värdet i knappen ökar när knappen klickas på.
+
+Texten i knappen ska vara 1 (utan citattecken) från början.
+Din lösning  -->
+
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Öka insatsen</title>
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+  </head>
+  <body>
+    <div id="app">
+      <input v-on:click="increase" type="button" :value="value">
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

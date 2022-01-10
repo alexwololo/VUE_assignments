@@ -1,5 +1,11 @@
 Vue.createApp({
   data() {
-    return { isDisabled: true };
-  },
-}).mount("#app");
+    return {
+      players: [
+        { name: 'Alice', credits: 150 },
+        { name: 'Bob', credits: 100 },
+        { name: 'Cesar', credits: 50 }
+      ]
+    }
+  }
+}).mount('#app')

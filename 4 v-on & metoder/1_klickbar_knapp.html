@@ -1,0 +1,28 @@
+<!-- Uppgift: En klickbar knapp
+Instruktioner
+
+Gör så att en alert-dialogruta innehållandes texten…
+
+    Hello World!
+
+… visas när knappen klickas på.
+Din lösning  -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>En klickbar knapp</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <input v-on:click="onClick" type="button" value="Klicka här">
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

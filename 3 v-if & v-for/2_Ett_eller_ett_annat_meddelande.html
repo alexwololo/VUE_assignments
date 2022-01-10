@@ -1,0 +1,37 @@
+<!-- Uppgift: Ett, eller ett annat, meddelande
+Instruktioner
+Gör så att <span>Krona</span> eller <span>Klave</span> renderas (inuti app-elementet), beroende på om oneOrZero är 0 (krona) eller 1 (klave).
+
+Värdet på oneOrZero kommer att bero på slumpen. Vissa sidladdningar kommer oneOrZero att vara 0, och andra sidladdningar kommer oneOrZero att vara 1. Prova gärna att köra Math.random() och Math.round(Math.random()), några gånger, i webbläsarens konsol.
+
+Använd v-else på ett av span-elementen.
+
+Lösningen ska inte innehålla någon egen/modifierad JavaScript-kod.
+
+Här finns information om hur Math.random och Math.round fungerar (som inte behöver användas för att lösa uppgiften):
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
+Din lösning -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ett, eller ett annat, meddelande</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <span v-if="oneOrZero == 1">Klave</span>
+    <span v-else>Krona</span>
+  </div>
+
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
