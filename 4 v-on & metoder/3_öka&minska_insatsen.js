@@ -4,7 +4,7 @@ Vue.createApp({
   },
   methods: {
     increase() {
-      this.value = this.value + 1;
+      this.value() = this.value + 1;
     },
   },
 }).mount("#app");
