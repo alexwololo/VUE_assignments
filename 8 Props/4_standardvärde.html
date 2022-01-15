@@ -1,0 +1,33 @@
+<!-- Uppgift: Ett standardvärde
+Instruktioner
+Anpassa lösningen från den föregående uppgiften så att prop-värdet…
+
+inte längre är obligatoriskt, och
+blir “Anonym” om prop-värdet skulle utelämnas.
+<greet></greet> ska alltså göra så att <div>Välkommen, Anonym!</div> renderas. Komponenten ska fungera som i den föregående uppgiften om prop-värdet sätts till ett värde av en felaktig datatyp (alltså till en icke-sträng).
+
+Sök upp information om hur default-nyckeln kan användas för att sätta standardvärden.
+
+Din lösning -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ett standardvärde</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <greet player-name="Alice"></greet> <!-- Välkommen, Alice! -->
+    <greet player-name="Bob"></greet> <!-- Välkommen, Bob! -->
+    <greet></greet> <!-- Välkommen, Anonym! -->
+    <greet :player-name="5"></greet> <!-- Fel -->
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

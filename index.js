@@ -1,11 +1,13 @@
-Vue.createApp({
-  data() {
-    return { value: 1 };
-  },
+// const app = Vue.createApp({});
+
+app.component("controls", {
+  data() {},
   methods: {
-    increase(one) {
-      this.value = this.value + one;
-      var one = 1;
+    onClick() {
+      this.$emit("start-game");
     },
   },
-}).mount("#app");
+  template: '<input :value="controlzzzs" @click="onClick" type="button">',
+});
+
+// app.mount("#app");

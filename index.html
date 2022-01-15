@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="sv">
-
-<head>
-  <meta charset="utf-8">
-  <title>Öka insatsen variabelt</title>
-  <meta content="initial-scale=1, width=device-width" name="viewport">
-</head>
-
-<body>
-  <div id="app">
-    <input @click="increase(1)" type="button" value="Öka med 1">
-    <input @click="increase(2)" type="button" value="Öka med 2">
-    <p>
-      {{ value }}
-    </p>
-  </div>
-  <script src="https://unpkg.com/vue@next"></script>
-  <script src="index.js"></script>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <title>Ett custom event</title>
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+  </head>
+  <body>
+    <div id="app">
+      <controls @start-game="onStartGame"></controls>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+      const app = Vue.createApp({
+        methods: {
+          onStartGame() {
+            console.log('start-game har tagits emot!')
+          }
+        }
+      })
+    </script>
+    <script src="index.js"></script>
+    <script>
+      app.mount('#app')
+    </script>
+  </body>
 </html>

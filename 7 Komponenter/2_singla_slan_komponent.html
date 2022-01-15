@@ -1,0 +1,45 @@
+<!-- Uppgift: En singla slant-komponent
+Instruktioner
+Konvertera koden från uppgiften Ett, eller ett annat, meddelande från modulen Vue.js: Villkorlig rendering (v-if) och listrendering (v-for), till en komponent, “coin-toss”.
+
+Komponenten får endast innehålla span-element.
+
+Texten “Krona” eller “Klave” ska renderas när komponenten nyttjas. Det ska vara slumpmässigt om “Krona” eller “Klave” renderas.
+
+Din lösning -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>En singla slant-komponent</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <h1>Några slumpmässiga utfall</h1>
+    <ul>
+      <li>
+        <coin-toss></coin-toss>
+      </li>
+      <li>
+        <coin-toss></coin-toss>
+      </li>
+      <li>
+        <coin-toss></coin-toss>
+      </li>
+      <li>
+        <coin-toss></coin-toss>
+      </li>
+      <li>
+        <coin-toss></coin-toss>
+      </li>
+    </ul>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

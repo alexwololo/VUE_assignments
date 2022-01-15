@@ -1,0 +1,28 @@
+<!-- Uppgift: Två textfält med samma innehåll
+Instruktioner
+Skapa två (och endast två) input-textfält, sådana att det som skrivs in i ett av textfälten automatiskt reflekteras i det andra. Till exempel, om “Alice” matas in i det ena textfältet, så ska det även stå “Alice” i det andra.
+
+Använd v-model.
+
+Din lösning -->
+
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Två textfält med samma innehåll</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <input v-model="s">
+    <input v-model="s">
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

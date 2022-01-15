@@ -1,0 +1,32 @@
+<!-- Uppgift: Hämta städer automatiskt
+Instruktioner
+Anpassa lösningen på den föregående uppgiften. Kraven från den föregående uppgiften ska förbli uppfyllda.
+
+Gör så att GET-anropet istället görs automatiskt i samband med att sidan laddas in. Använt en relevant livscykelmetod.
+
+Din lösning -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hämta städer automatiskt</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <dl v-if="cities !== null">
+      <template v-for="city in cities">
+        <dt>{{ city.name }}</dt>
+        <dd>{{ city.population }}</dd>
+      </template>
+    </dl>
+    <p v-else>Laddar...</p>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

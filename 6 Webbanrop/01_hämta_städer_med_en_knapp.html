@@ -1,0 +1,36 @@
+<!-- Uppgift: Hämta städer med en knapp
+Instruktioner
+Använd ett GET-anrop mot https://avancera.app/cities/ för att rendera städerna i beskrivningslistan (dl-elementet), när användaren klickar på knappen.
+
+dl-elementet ska inte renderas förrän knappen klickas på (och städerna har hämtats).
+
+template-elementet ovan är speciellt och renderas inte, utan används här för att “kapsla in” dt- och dd-elementen så att de renderas parvis.
+
+Använd gärna Inspektör-fliken för att se det renderade resultatet.
+
+Din lösning -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hämta städer med en knapp</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <input @click="fetchCities" type="button" value="Hämta städer">
+    <dl v-if="cities !== null">
+      <template v-for="city in cities">
+        <dt>{{ city.name }}</dt>
+        <dd>{{ city.population }}</dd>
+      </template>
+    </dl>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
