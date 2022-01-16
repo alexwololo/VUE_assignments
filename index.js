@@ -1,13 +1,14 @@
-// const app = Vue.createApp({});
-
-app.component("controls", {
-  data() {},
-  methods: {
-    onClick() {
-      this.$emit("start-game");
-    },
+Vue.createApp({
+  created() {
+    fetch("https://avancera.app/cities/", {
+      body: '{ "name": "Teststad", "population":123}',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
   },
-  template: '<input :value="controlzzzs" @click="onClick" type="button">',
-});
-
-// app.mount("#app");
+  data() {
+    return { cities: null };
+  },
+}).mount("#app");

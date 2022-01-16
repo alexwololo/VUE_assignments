@@ -1,0 +1,44 @@
+<!-- Uppgift: Lägg till en stad
+Instruktioner
+Anpassa lösningen på den föregående uppgiften. Kraven från den föregående uppgiften ska förbli uppfyllda.
+
+Utveckla lösningen så att ett POST-anrop utförs när knappen klickas på, som lägger till en stad med det önskade namnet och den önskade befolkningen.
+
+Gör också så att listan med städer uppdateras när en stad har lagts till, så att man kan se staden som läggs till i listan.
+
+Städerna ska även, likt i den föregående uppgiften, visas från början.
+
+Din lösning -->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lägg till en stad</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <label>
+      Namn
+      <input v-model="name" placeholder="Namn">
+    </label>
+    <label>
+      Befolkning
+      <input v-model="population" placeholder="Befolkning" type="number">
+    </label>
+    <input @click="addCity()" type="button" value="Lägg till stad">
+    <dl v-if="cities !== null">
+      <template v-for="city in cities">
+        <dt>{{ city.name }}</dt>
+        <dd>{{ city.population }}</dd>
+      </template>
+    </dl>
+    <p v-else>Laddar...</p>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

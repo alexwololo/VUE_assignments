@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Tre webbsidor</title>
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+        <ul>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/page-1">Page 1</router-link></li>
+          <li><router-link to="/page-2">Page 2</router-link></li>
+        </ul>
+      </nav>
+      <main>
+        <router-view></router-view>
+      </main>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue-router@next"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

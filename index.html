@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="utf-8">
-    <title>Ett custom event</title>
-    <meta content="initial-scale=1, width=device-width" name="viewport">
-  </head>
-  <body>
-    <div id="app">
-      <controls @start-game="onStartGame"></controls>
-    </div>
-    <script src="https://unpkg.com/vue@next"></script>
-    <script>
-      const app = Vue.createApp({
-        methods: {
-          onStartGame() {
-            console.log('start-game har tagits emot!')
-          }
-        }
-      })
-    </script>
-    <script src="index.js"></script>
-    <script>
-      app.mount('#app')
-    </script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bevakare</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <input v-model="s">
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

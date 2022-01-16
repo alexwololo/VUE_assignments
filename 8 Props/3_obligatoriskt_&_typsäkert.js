@@ -1,6 +1,10 @@
 const app = Vue.createApp({});
 
 app.component("greet", {
+  data() {
+    return {};
+  },
+  methods: {},
   // var tidigare ["playerName"]
   props: {
     playerName: {
