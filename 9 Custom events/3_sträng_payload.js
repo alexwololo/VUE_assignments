@@ -1,19 +1,14 @@
-// const app = Vue.createApp({});
-
 app.component("controls", {
   data() {
     return {
-      s: "",
+      payload: undefined,
     };
   },
   methods: {
     onClick() {
-      this.$emit("start-game", this.s);
+      this.$emit("start-game", this.payload);
     },
   },
-
+  template: `<input type="button" @click="onClick"><input type="text" v-model="payload">`,
   emits: ["startGame"],
-  template: `<input @click="onClick" type="button"> <input type:text v-model=" "`,
 });
-
-// app.mount("#app");

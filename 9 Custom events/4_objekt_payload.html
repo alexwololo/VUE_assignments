@@ -1,0 +1,44 @@
+<!-- Uppgift: En objekt-payload
+Instruktioner
+Anpassa lösningen på den föregående uppgiften. Kraven från den föregående uppgiften ska förbli uppfyllda.
+
+Gör så att payload:en för start-game-custom event:et är ett objekt.
+
+Objektet ska innehålla två nycklar: userName och credits. userName ska innehålla strängvärdet från den föregående uppgiften, och credits ska innehålla number-värdet 100.
+
+Notera att Vue.js inte behöver initialiseras eller monteras.
+
+Din lösning -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Skicka och ta emot en objekt-payload</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <controls @start-game="onStartGame"></controls>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script>
+    const app = Vue.createApp({
+      methods: {
+        onStartGame(o) {
+          console.log('start-game har tagits emot!')
+          console.log(`Användarnamnet är ${o.userName}.`)
+          console.log(`Poängen är ${o.credits}.`)
+        }
+      }
+    })
+  </script>
+  <script src="index.js"></script>
+  <script>
+    app.mount('#app')
+  </script>
+</body>
+
+</html>

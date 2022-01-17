@@ -1,0 +1,27 @@
+<!-- Uppgift: Webbanrop i en komponent
+Instruktioner
+Skapa en komponent med namnet “cities”, som renderar lika många li-element som det finns städer på https://avancera.app/cities/.
+
+Komponenten ska göra ett GET-anrop till tjänsten automatiskt. Användaren ska alltså inte behöva klicka på en knapp, eller liknande, för att rätt antal li-elementen ska renderas.
+
+Gör också så att li-elementens innehåll är endast namnet på den respektive staden (till exempel “Stockholm”).
+
+Din lösning -->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Webbanrop i en komponent</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <cities></cities>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

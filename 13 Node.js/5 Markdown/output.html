@@ -1,0 +1,20 @@
+<h1 id="markdown">Markdown</h1>
+<p><a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> är ett
+textbaserat uppmärkningsspråk för att enkelt skapa formaterade dokument.</p>
+<p>Markdown används ofta av utvecklare, och i kombination med till exempel GitHub.</p>
+<h2 id="konvertera-en-markdown-fil-till-html">Konvertera en Markdown-fil till HTML</h2>
+<p>Markdown går att använda på flera sätt. Ett av dessa sätt är via
+Node.js-terminalkommandot <code>npx</code> och NPM-paketet marked.</p>
+<p>För att konvertera en Markdown-fil (till exempel <code>input.md</code>) till en HTML-fil
+(till exempel <code>output.html</code>), så kan man använda växlarna <code>-i</code> (input) och <code>-o</code>
+(output), till exempel så här: <code>npx marked -i input.md -o output.html</code>.</p>
+<p><code>npx</code> kör Node.js-program utan att de behöver installeras. <code>npx</code>-kommandon kan,
+men måste inte, köras från en Node.js-projektmapp. Dock måste kommandot köras
+från en mapp som innehåller en fil som matchar filnamnet i <code>-i</code>-växeln (till
+exempel <code>input.md</code>).</p>
+<h2 id="vad-som-ska-göras">Vad som ska göras</h2>
+<p>Låt detta kodblock (denna uppgiftstext, alltså texten efter “Instruktioner” och
+innan “Ladda upp din lösning”) ingå i en fil som heter <code>input.md</code>, och använd
+sedan marked för att konvertera kodblocket till HTML. Ladda upp resultatet av
+konverteringen som en fil döpt till <code>output.html</code>.</p>
+<p>Kika också gärna på HTML-filens innehåll, och jämför det med detta kodblock.</p>

@@ -1,26 +1,24 @@
 const app = Vue.createApp({});
 
-const Page2 = { template: "<h1>Page 2</h1>" };
-const Page1 = { template: "<h1>Page 1</h1>" };
-const Home = {
-  methods: {
-    onClick() {
-      this.$router.push("/page-1");
-    },
-  },
-  template:
-    '<div><h1>home</h1> <input value="page 1" @click="onClick" type="button"></div>',
+const pageX = {
+  template: `
+        <h1>Page {{this.$route.params.pageX}}</h1>`,
+};
+const pageString = {
+  template: `
+        <h1>{{this.$route.params.string1}}{{this.$route.params.string2}} </h1>`,
 };
 
 const routes = [
-  { component: Home, path: "/" },
-  { component: Page1, path: "/page-1" },
-  { component: Page2, path: "/page-2" },
+  { component: pageX, path: "/pages/:pageX" },
+  { component: pageString, path: "/:string1/:string2" },
 ];
+
 const router = VueRouter.createRouter({
   history: VueRouter.createWebHashHistory(),
-  routes: routes,
+  routes,
 });
 
 app.use(router);
+
 app.mount("#app");

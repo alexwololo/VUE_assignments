@@ -1,0 +1,34 @@
+<!-- Uppgift: En tärningskomponent
+Instruktioner
+Skapa en komponent med namnet “dice”.
+
+Komponenten ska kunna producera slumpmässiga heltal mellan 1 och 6.
+
+Komponenten ska rendera en knapp i form av ett input-element, med type-attributet satt till button. Det slumpmässiga värdet ska sättas med value-attributet.
+
+Gör så att komponenten kan slumpa fram ett nytt värde varje gång man klickar på knappen.
+
+Gör också så att tärningen visar ett slumpmässigt värde redan från början, innan användaren har hunnit klicka på knappen.
+
+Tärningen måste inte, på grund av slumpen, byta sitt värde varje gång man klickar på den (det är exempel möjligt att slå sexor flera gånger i rad med en tärning, och samma scenario ska kunna uppstå här).
+
+Din lösning -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>En tärningskomponent</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    <dice></dice>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

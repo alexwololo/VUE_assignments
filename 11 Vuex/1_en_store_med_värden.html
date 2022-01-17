@@ -1,0 +1,30 @@
+<!-- Uppgift: En store med värden
+Instruktioner
+Skapa en Vuex-store, och låt ett tillhörande state-objekt.
+
+Låt state-objektet innehålla ett (och endast ett) värde av varje, av följande datatyper: string, number och boolean.
+
+Ingen HTML-kod behöver renderas i denna uppgift.
+
+State-objektet ska gå att se i Vuex-fliken i Vue.js DevTools (klicka på “Base State”).
+
+Utgå från följande HTML-kod (som inte ska redigeras): -->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>En store med värden</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+
+<body>
+  <div id="app">
+    {{ $store.state }}
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="https://unpkg.com/vuex@next"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
