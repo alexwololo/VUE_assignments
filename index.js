@@ -1,5 +1,11 @@
 Vue.createApp({
   data() {
-    return { name: "hello", number: 5 };
+    return { value: 1 };
+  },
+  methods: {
+    increase(one) {
+      this.value = this.value + one;
+
+    },
   },
 }).mount("#app");

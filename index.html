@@ -3,15 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Textinterpolering</title>
-  <script src="https://unpkg.com/vue@next"></script>
+  <title>Öka insatsen variabelt</title>
+  <meta content="initial-scale=1, width=device-width" name="viewport">
 </head>
 
 <body>
   <div id="app">
-    <p>{{name}} {{ number }}</p>
-    <p>{{ name }}</p>
+    <input @click="increase(1)" type="button" value="Öka med 1">
+    <input @click="increase(2)" type="button" value="Öka med 2">
+    <p>
+      {{ value }}
+    </p>
   </div>
+  <script src="https://unpkg.com/vue@next"></script>
   <script src="index.js"></script>
 </body>
 
