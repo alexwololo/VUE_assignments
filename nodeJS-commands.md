@@ -2,7 +2,12 @@
 
 # Kommandon för terminalen
 
+# Skapa pdf från en md fil
+
+npx markdown-pdf mission-vision-goal.md
+
 ## Back en mapp
+
 cd ..
 
 ## Skapa mapp
